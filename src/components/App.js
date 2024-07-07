@@ -55,6 +55,7 @@ export class App extends Component {
                 const amount = Number(itemDelete.dataset.amount)
                 this.state.total -= amount
                 this.$total.textContent = this.state.total
+                arrayDonates.splice(index, 1)
             }
         })
 
